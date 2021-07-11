@@ -1,17 +1,20 @@
 import React from "react";
-import { Nav, Navbar, Button, Form, FormControl } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 
 export const NavBar = () => {
    return (
-      <div>
-         <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+      <Navbar bg="dark" variant="dark">
+         <div className="container">
+            <Navbar.Brand href="#home">Blogs</Navbar.Brand>
             <Nav className="ml-auto">
-               <Nav.Link href="#home">Home</Nav.Link>
-               <Nav.Link href="#features">Features</Nav.Link>
-               <Nav.Link href="#pricing">Pricing</Nav.Link>
+               <Nav.Link href="#home">
+                  <AccountCircleIcon />
+               </Nav.Link>
+               <Nav.Link href="#features">Login</Nav.Link>
+               <Nav.Link href="#pricing">Logout</Nav.Link>
             </Nav>
-         </Navbar>
-      </div>
+         </div>
+      </Navbar>
    );
 };
