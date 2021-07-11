@@ -1,6 +1,7 @@
 import { NavBar } from "./components/Nav";
 import { Login } from "./components/Login";
 import { Register } from "./components/Register";
+import { Blog } from "./components/Blog";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -9,7 +10,8 @@ function App() {
       <div className="App">
          <NavBar />
          {/* <Login /> */}
-         <Register />
+         {/* <Register /> */}
+         <Blog />
       </div>
    );
 }
