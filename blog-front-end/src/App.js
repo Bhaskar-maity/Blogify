@@ -26,11 +26,12 @@ function App() {
                <Route path="/register">
                   <Register />
                </Route>
-               {/* <Login /> */}
-               {/* <Register /> */}
-               {/* <Blog /> */}
-               {/* <BlogList /> */}
-               <CreateBlog />
+               <Route path="/create">
+                  <CreateBlog />
+               </Route>
+               <Route path="/post/:pid">
+                  <Blog />
+               </Route>
             </Switch>
          </div>
       </Router>
