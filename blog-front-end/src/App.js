@@ -3,6 +3,7 @@ import { Login } from "./components/Login";
 import { Register } from "./components/Register";
 import { Blog } from "./components/Blog";
 import { BlogList } from "./components/BlogList";
+import { CreateBlog } from "./components/CreateBlog";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -13,7 +14,8 @@ function App() {
          {/* <Login /> */}
          {/* <Register /> */}
          {/* <Blog /> */}
-         <BlogList />
+         {/* <BlogList /> */}
+         <CreateBlog />
       </div>
    );
 }
