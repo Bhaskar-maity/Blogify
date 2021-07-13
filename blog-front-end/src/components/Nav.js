@@ -6,21 +6,21 @@ export const NavBar = () => {
    return (
       <Navbar bg="dark" variant="dark">
          <div className="container">
-            <Navbar.Brand href="home">Bhaskar's Blogs</Navbar.Brand>
+            <Navbar.Brand href="/">Bhaskar's Blogs</Navbar.Brand>
             <Nav className="ml-auto">
-               <Link className="link" to="home">
+               <Link className="link" to="/">
                   <AccountCircleIcon />
                </Link>
-               <Link className="link" to="create">
+               <Link className="link" to="/create">
                   Create
                </Link>
-               <Link className="link" to="login">
+               <Link className="link" to="/login">
                   Login
                </Link>
-               <Link className="link" to="register">
+               <Link className="link" to="/register">
                   Register
                </Link>
-               <Link className="link" to="logout">
+               <Link className="link" to="/logout">
                   Logout
                </Link>
             </Nav>

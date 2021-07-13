@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./BlogList.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export const BlogList = () => {
    const [posts, setPosts] = useState([]);
@@ -23,7 +24,9 @@ export const BlogList = () => {
                   />
 
                   <div className="blog-body col-md-8">
-                     <h2>{post.title}</h2>
+                     <Link className="Link" to={`/post/${post._id}`}>
+                        <h2>{post.title}</h2>
+                     </Link>
                      <p>{post.desc}</p>
                   </div>
                </div>
