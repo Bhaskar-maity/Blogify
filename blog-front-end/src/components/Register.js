@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Login.css";
+import axios from "axios";
 
 export const Register = () => {
    const [email, setEmail] = useState("");
@@ -11,9 +12,14 @@ export const Register = () => {
       return email.length > 0 && password.length > 0;
    }
 
-   function handleSubmit(event) {
+   const handleSubmit = async (event) => {
       event.preventDefault();
-   }
+      const res = await axios.post("/auth/register", {
+         email,
+         password,
+      });
+      res.data && window.location.replace("/login");
+   };
 
    return (
       <div className="Login">

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Login.css";
+import axios from "axios";
 
 export const Login = () => {
    const [email, setEmail] = useState("");
@@ -11,9 +12,9 @@ export const Login = () => {
       return email.length > 0 && password.length > 0;
    }
 
-   function handleSubmit(event) {
+   const handleSubmit = async (event) => {
       event.preventDefault();
-   }
+   };
 
    return (
       <div className="Login">
