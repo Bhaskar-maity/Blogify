@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Home from "./pages/home/Home";
 import TopBar from "./components/topbar/TopBar";
 import Single from "./pages/single/Single";
@@ -11,8 +12,28 @@ import { Context } from "./context/Context";
 
 function App() {
    const { user } = useContext(Context);
+   const [toggle, settoggle] = useState(false);
+
+   const handleClick = () => {
+      settoggle((prevToggle) => !prevToggle);
+   };
+
    return (
       <Router>
+         <div className="chatbot_icon" onClick={handleClick}>
+            <i class="fas fa-comments"></i>
+         </div>
+         {toggle && (
+            <div className="chatbot_frame">
+               <iframe
+                  title="This is a chatbot_frame"
+                  allow="microphone;"
+                  width="350"
+                  height="430"
+                  src="https://console.dialogflow.com/api-client/demo/embedded/b77d12c5-24ab-42d6-b608-af4e4e6adcbc"
+               ></iframe>
+            </div>
+         )}
          <TopBar />
 
          <Switch>

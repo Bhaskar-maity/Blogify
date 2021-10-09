@@ -46,3 +46,20 @@
    text-decoration: none;
    color: white;
 }
+.chatbot_icon {
+   position: fixed;
+   right: 30px;
+   bottom: 0;
+   font-size: 80px;
+   color: coral;
+   cursor: pointer;
+   z-index: 1000;
+}
+
+.chatbot_frame {
+   position: fixed;
+   right: 20px;
+   bottom: 100px;
+
+   z-index: 1000;
+}
