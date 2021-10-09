@@ -1,4 +1,6 @@
 # FullStack-Blog-Website
+Full Stack Blog app Using MERN stack:MongoDB, React, Express, Node.js. With Google cloud Dilogflow NLP Chatbot.
+# See it live here [BlogiFy](https://blogify-c28a7b.netlify.app)
 
 ## Demo
 Check out the demo gif for a quick example of how  works.
